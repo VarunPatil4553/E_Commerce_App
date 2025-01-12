@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs')%>
+<form action="/trades" method="POST" id="simple-forms">
+  <div id = "labels">
+    <label>Category</label>
+    <input type="text" id="singerName-input" name= "category" placeholder="Enter the Category Name" required>
+  </div>
+  <div>
+    <label>Name</label>
+    <input type="text" id="name-input" name= "name" placeholder="Enter the Tilte" required>
+  </div>
+  <div>
+    <td ><label for="status">Status:</label></td>
+    <td><input type="text" class="form-control" id="status"  name="status" placeholder="Available" required></td>
+  </div>
+  <div>
+    <label>Details</label>
+    <textarea rows="10" cols="50" name= "details" required minlength="10"></textarea>
+  </div>
+  <div>
+    <label for="image">Image URL</label>
+    <input type="url" id="image" name="image" placeholder="Image URL">
+  </div>
+  <button type="submit" id="create--album-button">Create Trade</button>
+</form>
+<%- include('./partials/footer.ejs')%>
